@@ -1,67 +1,114 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<html>
-	<head>
-		<title>cta</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body class="is-preload">
-		<header id="header">
-			<div class="container header-inner">
-				<h1 class="site-title">Chau Ta</h1>
-				<nav aria-label="Social links">
-					<ul class="social">
-						<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/cht-au" class="fa fa-github" aria-label="GitHub"></a></li>
-						<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chau-ta-b681112ab/" class="fa fa-linkedin-square" aria-label="LinkedIn"></a></li>
-						<li><a target="_blank" rel="noopener noreferrer" href="assets/documents/Chau Ta Resume 10-2024.pdf" class="fa fa-file" aria-label="Resume"></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+	<title>Portofolio Website</title>
+</head>
+<body>
+	<div class="container py-5" style="max-width: 1000px;">
+		
+		<div class="page-header">
+			<h1 class="fw-bold mb-4">Personal Portfolio Website</h1>
+			<p class="text-muted mb-4">
+				I'm a junior student studying computer science at the University of Notre Dame
+			</p>
+		</div>
 
-		<main class="container">
-			<section class="intro">
-				<p class="lead">Computer Science student focused on embedded systems, computer vision, and mobile development. Welcome — here's a selection of my projects.</p>
-			</section>
 
-			<section class="projects">
-				<h2>Projects</h2>
-				<div class="grid">
-					<article class="card">
-						<img class="card-image" src="assets/images/fish_tracking.png" alt="Underwater image processing example">
-						<div class="card-body">
-							<h3>Underwater Image Processing</h3>
-							<p>Collaborated with international students to identify fish feeding behavior from video feeds. Built a MATLAB tracking pipeline with contrast enhancement and blob analysis achieving ~80% tracking accuracy to enable quantitative behavior analysis.</p>
-							<p class="links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cht-au" class="btn">View code</a></p>
-						</div>
-					</article>
+		<hr>
 
-					<article class="card">
-						<img class="card-image" src="assets/images/ble_app.jpg" alt="Bluetooth Low Energy app screenshot">
-						<div class="card-body">
-							<h3>Bluetooth Low Energy Scanning</h3>
-							<p>Developed an Android app in Kotlin to perform reliable background BLE scanning. Designed a layered architecture to support continuous background interactions and incorporated faculty feedback during development.</p>
-							<p class="links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cht-au" class="btn">View code</a></p>
-						</div>
 
-					</article>
-										<article class="card">
-						<img class="card-image" src="assets/images/ble_app.jpg" alt="Bluetooth Low Energy app screenshot">
-						<div class="card-body">
-							<h3>Spotify Data Analyzer</h3>
-							<p>MATLAB app that process 10,000+ data points and display various statistics about songs on Spotify throughout history.</p>
-							<p class="links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cht-au" class="btn">View code</a></p>
-						</div>
-					</article>
+		
+		
+		<!-- Projects -->
+		<div class="page-header mb-4">
+			<h3>Projects</h3>
+		</div>
 
+		<div class="row g-4">
+			<div class="col-12">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title">FlightBowl</h5>
+						<p class="card-text">
+							A flight booking and management system for the Notre Dame Marching Band,
+							coordinating travel for football bowl games and managing group flight logistics.
+						</p>
+						<a href="https://github.com/cht-au/FlightBowl" class="btn btn-primary">
+							GitHub page <i class="fa fa-github ms-1"></i>
+						</a>
+						<a href="#" class="btn btn-primary ms-2">
+							Our demo video! 
+						</a>
+					</div>
 				</div>
-			</section>
-		</main>
-	</body>
+			</div>
+
+			<div class="col-12">
+			<div class="card shadow-sm">
+				<div class="card-body">
+				<h5 class="card-title">Bluetooth Low Energy Scanner</h5>
+				<p class="card-text">
+					Android app that scans nearby BLE devices, displays RSSI strength,
+					supports background scanning, and notifies users when beacons are in range.
+				</p>
+				<a href="https://github.com/cht-au/ble-background-scan" class="btn btn-primary">
+					GitHub page <i class="fa fa-github ms-1"></i>
+				</a>				
+				</div>
+			</div>
+			</div>
+
+			<div class="col-12">
+			<div class="card shadow-sm">
+				<div class="card-body">
+				<h5 class="card-title">Underwater Fish Tracker</h5>
+				<p class="card-text">
+					MATLAB-based motion tracking system using contrast enhancement
+					and blob analysis to detect and track fish in video.
+				</p>
+				<a href="https://github.com/cht-au/Ishii-Lab-Image-Processing" class="btn btn-primary">
+					GitHub page <i class="fa fa-github ms-1"></i>
+				</a>
+				</div>
+				<img src="./assets/images/fish_tracking.png" class="card-img-bottom object-fit-cover" style="max-height: 400px;">
+			</div>
+			</div>
+
+		</div>
+
+
+		<hr>
+
+		<!-- Contacts -->
+		<h3 class="mb-4">Contact</h3>
+
+		<div class="row text-center g-3">
+
+			<div class="col-sm-4">
+			<a class="btn btn-outline-info w-100" href="./assets/documents/Chau Ta Resume 12-2025.pdf">
+				Resume <i class="fa fa-file ms-2"></i>
+			</a>
+			</div>
+
+			<div class="col-sm-4">
+			<a class="btn btn-outline-info w-100" href="https://www.linkedin.com/in/chau-ta-b681112ab/">
+				LinkedIn <i class="fa fa-linkedin ms-2"></i>
+			</a>
+			</div>
+
+			<div class="col-sm-4">
+			<a class="btn btn-outline-info w-100" href="https://github.com/cht-au">
+				GitHub <i class="fa fa-github ms-2"></i>
+			</a>
+			</div>
+
+		</div>
+	</div>
+</body>
 </html>
